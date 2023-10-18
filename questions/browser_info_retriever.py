@@ -3,8 +3,19 @@ from playwright.sync_api import Page
 from resolutions.browser_info_retriever import BrowserInfoRetrieverResolutions
 
 
-class BrowserInfoRetrieverQuestions:
+class BrowserInfoRetrieverQuestions:  # pylint: disable=too-few-public-methods
+    """
+    This class represents questions that validate information retrieved from a browser page.
+
+    :type: Question
+    """
+
     def __init__(self, page: Page):
+        """
+        Initialize the BrowserInfoRetrieverQuestions with a page.
+
+        :param page: The Page object from playwright.
+        """
         self._page = page
 
     def is_page_title_correct(self, title: str):

@@ -10,6 +10,11 @@ from utils.project_directory_finder import get_project_directory
 @contextmanager
 @fixture(scope='session')
 def config():
+    """
+    Fixture to load the configuration data from a JSON file.
+
+    :return: The configuration data as a dictionary.
+    """
     directory = get_project_directory()
     file_address = directory + '/config.json'
     with open(file_address, encoding='utf-8') as file_name:

@@ -1,5 +1,6 @@
 """
-The module represents the control browser ability.
+This module provides the ControlBrowser class which represents the ability to control a browser.
+It includes navigating to a URL and retrieving the page title.
 """
 from playwright.sync_api import Page
 
@@ -8,12 +9,21 @@ from actions.browser_info_retriever import BrowserInfoRetrieverActions
 
 
 class ControlBrowser:
+    """
+    This class represents the ability to control a browser.
+    It includes methods to navigate to a URL and retrieve the page title.
+
+    :type: Ability
+    """
+
     def __init__(self, page: Page):
         self._page = page
 
     def navigate_to_url(self, url: str) -> None:
         """
-        Represent the ability for navigating to a URL
+        Navigate to a given URL.
+
+        :param url: The URL to navigate to.
         :return: None
         """
         browser_navigation = BrowserNavigatorActions(self._page, url)
@@ -21,8 +31,9 @@ class ControlBrowser:
 
     def get_page_title(self) -> str:
         """
-        Represent the ability for getting the page title
-        :return: The page title
+        Retrieve the title of the current page.
+
+        :return: The title of the current page as a string.
         """
         browser_info = BrowserInfoRetrieverActions(self._page)
         return browser_info.get_page_title()

@@ -17,13 +17,9 @@ def config():
     :return: The configuration data as a dictionary.
     """
     directory = get_project_directory()
-    LOGGER.info('Directory', extra={
-        'Directory': directory
-    })
+    LOGGER.info('Directory', extra={'Directory': directory})
     file_address = path.join(directory, 'config.json')
-    LOGGER.info('File address', extra={
-        'File address': file_address
-    })
+    LOGGER.info('File address', extra={'File address': file_address})
     with open(file_address, encoding='utf-8') as file_name:
         config_data = json.load(file_name)
         LOGGER.info('Config data', extra={'Config File Data': config_data})

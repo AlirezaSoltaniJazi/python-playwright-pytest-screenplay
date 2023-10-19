@@ -4,8 +4,7 @@ It includes navigating to a URL and retrieving the page title.
 """
 from playwright.sync_api import Page
 
-from actions.browser_navigator import BrowserNavigatorActions
-from actions.browser_info_retriever import BrowserInfoRetrieverActions
+from actions import BrowserInfoRetrieverActions, BrowserNavigatorActions
 
 
 class ControlBrowser:

@@ -4,9 +4,7 @@ from os import path
 
 from pytest import fixture
 
-from utils.config_validator import validate_config
-from utils.logger_formatter import LOGGER
-from utils.project_directory_finder import get_project_directory
+from utils import get_project_directory, LOGGER, validate_config
 
 
 @contextmanager

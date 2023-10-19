@@ -1,8 +1,8 @@
 from assertpy import assert_that
 from playwright.sync_api import Page
 
-from actions.browser_info_retriever import BrowserInfoRetrieverActions
-from utils.logger_formatter import LOGGER
+from actions import BrowserInfoRetrieverActions
+from utils import LOGGER
 
 
 class BrowserInfoRetrieverResolutions:  # pylint: disable=too-few-public-methods

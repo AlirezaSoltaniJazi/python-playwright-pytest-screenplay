@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-from resolutions.browser_info_retriever import BrowserInfoRetrieverResolutions
+from resolutions import BrowserInfoRetrieverResolutions
 
 
 class BrowserInfoRetrieverQuestions:  # pylint: disable=too-few-public-methods

@@ -1,5 +1,5 @@
-from abilities.control_browser import ControlBrowser
-from questions.browser_info_retriever import BrowserInfoRetrieverQuestions
+from abilities import ControlBrowser
+from questions import BrowserInfoRetrieverQuestions
 
 
 class DuckDuckGoTasks(ControlBrowser, BrowserInfoRetrieverQuestions):

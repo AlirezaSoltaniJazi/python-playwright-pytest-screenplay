@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-from tasks.duck_duck_go import DuckDuckGoTasks
+from tasks import DuckDuckGoTasks
 
 
 class NormalUserActor(DuckDuckGoTasks):

@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-from utils.logger_formatter import LOGGER
+from utils import LOGGER
 
 
 class BrowserNavigatorActions:  # pylint: disable=too-few-public-methods

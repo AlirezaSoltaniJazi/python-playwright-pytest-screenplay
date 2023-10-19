@@ -75,13 +75,3 @@ pylint --generate-rcfile >.pylintrc
 ```shell
 pre-commit run
 ```
-
-## Screenplay
-
-- `screenpy`: A Python library that provides a composition-based architecture pattern for writing more maintainable
-  automated test suites⁵.
-- `screenpy_playwright`: An extension to the ScreenPy library that enables interaction with Playwright⁸.
-
-```shell
-pipenv install screenpy screenpy_playwright
-```

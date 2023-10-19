@@ -4,7 +4,7 @@ This module contains tasks
 from playwright.sync_api import Page
 from pytest import mark
 
-from actors.normal_user import NormalUserActor
+from actors import NormalUserActor
 
 
 @mark.search

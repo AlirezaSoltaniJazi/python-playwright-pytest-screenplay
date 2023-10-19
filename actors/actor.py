@@ -1,9 +1,9 @@
 from playwright.sync_api import Page
 
-from tasks.open_duck_duck_go import OpenDuckDuckGo
+from tasks.duck_duck_go import DuckDuckGoTasks
 
 
-class Actor(OpenDuckDuckGo):
+class Actor(DuckDuckGoTasks):
     """
     This class represents an Actor who can control a browser and retrieve information from it.
 

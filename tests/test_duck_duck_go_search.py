@@ -4,14 +4,14 @@ This module contains tasks
 from playwright.sync_api import Page
 from pytest import mark
 
-from actors.actor import Actor
+from actors.normal_user import NormalUserActor
 
 
 @mark.search
 def test_duck_duck_go_search(page: Page):
     url = 'https://www.duckduckgo.com'
     title = 'DuckDuckGo — Privacy, simplified.'
-    the_actor = Actor(page, 'Alireza Soltani Jazi')
+    the_actor = NormalUserActor(page, 'Alireza Soltani Jazi')
 
     # Given the actor navigates to the DuckDuckGo homepage
     # When the actor retrieves the title of the page

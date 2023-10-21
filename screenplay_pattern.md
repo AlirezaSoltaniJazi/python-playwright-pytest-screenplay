@@ -12,25 +12,17 @@ The screenplay pattern has 5 key elements.
 
 ```mermaid
 flowchart TD
-    A["fa:user-o Actor"] -- has --> B
     A[Actor] -- Performs --> D
+    A[Actor] -- has --> B
     A[Actor] -- Asks --> E
-    
-    B[Abilities] -- Invoke --> G
     B[Abilities] -- Enable --> C & E
-    
+    B[Abilities] -- Invoke --> G
     C[Actions] -- Invoke --> G
-    
     D[Tasks] -- Made up of --> C
-    
     E[Questions] -- Made up of --> F
-    
     F[Resolutions] -- Validate --> G
-    
     G[System Under The Test] -- has --> H
-    
     H[Pages] -- Made up of --> I
-    
     I[Elements]
 ```
 

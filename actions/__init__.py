@@ -1,4 +1,4 @@
-from actions.browser_info_retriever import BrowserInfoRetrieverActions
-from actions.browser_navigator import BrowserNavigatorActions
+from actions.get_page_title import GetPageTitle
+from actions.open_url import OpenURL
 
-__all__ = ['BrowserInfoRetrieverActions', 'BrowserNavigatorActions']
+__all__ = ['GetPageTitle', 'OpenURL']

@@ -1,3 +1,3 @@
-from abilities.control_browser import ControlBrowser
+from abilities.web_browser import BrowseTheWeb
 
-__all__ = ['ControlBrowser']
+__all__ = ['BrowseTheWeb']

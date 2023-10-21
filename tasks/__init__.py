@@ -1,3 +1,3 @@
-from tasks.duck_duck_go import DuckDuckGoTasks
+from tasks.open_duck_duck_go_page import OpenDuckDuckGoPageTask
 
-__all__ = ['DuckDuckGoTasks']
+__all__ = ['OpenDuckDuckGoPageTask']

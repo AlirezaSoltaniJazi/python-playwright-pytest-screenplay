@@ -25,7 +25,8 @@ def validate_config(config_data: dict):
         )
     if not isinstance(headed_mode_statue, bool):
         raise TypeError(
-            f'Active headed mode type is invalid, It must be boolean. current type: {type(headed_mode_statue)}'
+            f'Active headed mode type is invalid, It must be boolean. '
+            f'current type: {type(headed_mode_statue)}'
         )
     # Check key value
     if len(browser) <= 0:

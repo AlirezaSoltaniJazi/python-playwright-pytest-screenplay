@@ -17,7 +17,7 @@ flowchart TD
     A[Actor] -- Asks --> E
     B[Abilities] -- Enable --> C & E
     B[Abilities] -- Invoke --> G
-    C[Actions] -- Invoke --> G
+    C[Actions] -- Interact --> G
     D[Tasks] -- Made up of --> C
     E[Questions] -- Made up of --> F
     F[Resolutions] -- Validate --> G

@@ -1,5 +1,4 @@
 import json
-from contextlib import contextmanager
 from os import path
 
 from pytest import fixture
@@ -7,7 +6,6 @@ from pytest import fixture
 from utils import get_project_directory, LOGGER, validate_config
 
 
-@contextmanager
 @fixture(scope='session')
 def config():
     """
